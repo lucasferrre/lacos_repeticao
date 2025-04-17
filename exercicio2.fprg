@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio2"/>
+        <attribute name="authors" value="DES-MH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-16 10:00:37 "/>
+        <attribute name="created" value="REVTLU1IO0RFU0tUT1AtRjVPVU1CUDsyMDI1LTA0LTE2OyIwOTo1ODo0NiAiOzI3MTQ="/>
+        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtRjVPVU1CUDsyMDI1LTA0LTE2OyIwOTo1ODo0OSAiOzE7REVTLU1IO0RFU0tUT1AtRjVPVU1CUDsyMDI1LTA0LTE2OyIwOToyMzozOSAiO2V4ZXJjaWNpbzEuZnByZzs3MTMy"/>
+        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtRjVPVU1CUDsyMDI1LTA0LTE2OyIxMDowMDozNyAiOzE7MjgwMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="10"/>
+            <output expression="&quot;Exemplo WHILE!!!&quot;" newline="True"/>
+            <while expression="i&gt;=1">
+                <output expression="&quot;n&#250;mero&quot; &amp; i" newline="True"/>
+                <assign variable="i" expression="i-1"/>
+            </while>
+            <output expression="&quot;FIM!&quot;" newline="True"/>
+            <output expression="&quot;Exemplo FOR!!!&quot;" newline="True"/>
+            <for variable="i" start="10" end="1" direction="dec" step="1">
+                <output expression="&quot;n&#250;mero&quot; &amp; i" newline="True"/>
+            </for>
+            <output expression="&quot;FIM!&quot;" newline="True"/>
+            <output expression="&quot;Exemplo DO...WHILE&quot;" newline="True"/>
+            <assign variable="i" expression="10"/>
+            <do expression="i&gt;=1">
+                <output expression="&quot;N&#250;mero&quot; &amp; i" newline="True"/>
+                <assign variable="i" expression="i-1"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

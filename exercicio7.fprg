@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercicio7"/>
+        <attribute name="authors" value="DES-MH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-17 09:53:04 "/>
+        <attribute name="created" value="REVTLU1IO0RFU0tUT1AtRjVPVU1CUDsyMDI1LTA0LTE2OyIxMDo0ODo0MSAiOzI3MDA="/>
+        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtRjVPVU1CUDsyMDI1LTA0LTE2OyIxMToyMzo1NiAiOzI7REVTLU1IO0RFU0tUT1AtRjVPVU1CUDsyMDI1LTA0LTE2OyIxMDoyNTo1MiAiO2V4ZXJjaWNpbzUuZnByZzs3MTA5"/>
+        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtRjVPVU1CUDsyMDI1LTA0LTE3OyIwOTo1MzowNCAiOzU7MjgxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valorInicial, valorFinal, incremento, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor inicial da contagem!&quot;" newline="True"/>
+            <input variable="valorInicial"/>
+            <output expression="&quot;Digite o valor final da contagem!&quot;" newline="True"/>
+            <input variable="valorFinal"/>
+            <output expression="&quot;Digite o valor do incremento!&quot;" newline="True"/>
+            <input variable="incremento"/>
+            <output expression="&quot;Exemplo WHILE!!!&quot;" newline="True"/>
+            <output expression="&quot;Primeiro Valor: &quot; &amp;valorInicial" newline="True"/>
+            <output expression="&quot;&#218;ltimo Valor: &quot; &amp;valorFinal" newline="True"/>
+            <output expression="&quot;Incremento: &quot; &amp;incremento" newline="True"/>
+            <if expression="valorInicial &lt;= valorFinal">
+                <then>
+                    <while expression="valorInicial &lt;= valorFinal">
+                        <output expression="&quot;n&#250;mero&quot; &amp; valorInicial" newline="True"/>
+                        <assign variable="valorInicial" expression="valorInicial+incremento"/>
+                    </while>
+                </then>
+                <else>
+                    <while expression="valorInicial &gt;= valorFinal">
+                        <output expression="&quot;n&#250;mero&quot; &amp; valorInicial" newline="True"/>
+                        <assign variable="valorInicial" expression="valorInicial-incremento"/>
+                    </while>
+                </else>
+            </if>
+            <output expression="&quot;FIM!&quot;" newline="True"/>
+            <output expression="&quot;===========&quot;" newline="True"/>
+            <output expression="&quot;Exemplo FOR!!!&quot;" newline="True"/>
+            <output expression="&quot;Digite o valor inicial da contagem!&quot;" newline="True"/>
+            <input variable="valorInicial"/>
+            <output expression="&quot;Digite o valor final da contagem!&quot;" newline="True"/>
+            <input variable="valorFinal"/>
+            <output expression="&quot;Digite o valor do incremento!&quot;" newline="True"/>
+            <input variable="incremento"/>
+            <output expression="&quot;Primeiro Valor: &quot; &amp;valorInicial" newline="True"/>
+            <output expression="&quot;&#218;ltimo Valor: &quot; &amp;valorFinal" newline="True"/>
+            <output expression="&quot;Incremento: &quot; &amp;incremento" newline="True"/>
+            <if expression="valorInicial &lt;= valorFinal">
+                <then>
+                    <for variable="i" start="valorInicial" end="valorFinal" direction="inc" step="incremento">
+                        <output expression="&quot;n&#250;mero&quot; &amp; i" newline="True"/>
+                    </for>
+                </then>
+                <else>
+                    <for variable="i" start="valorFinal" end="valorInicial" direction="dec" step="incremento">
+                        <output expression="&quot;n&#250;mero&quot; &amp; i" newline="True"/>
+                    </for>
+                </else>
+            </if>
+            <output expression="&quot;FIM!&quot;" newline="True"/>
+            <output expression="&quot;==========&quot;" newline="True"/>
+            <output expression="&quot;Exemplo DO...WHILE!!&quot;" newline="True"/>
+            <output expression="&quot;Digite o valor inicial da contagem!&quot;" newline="True"/>
+            <input variable="valorInicial"/>
+            <output expression="&quot;Digite o valor final da contagem!&quot;" newline="True"/>
+            <input variable="valorFinal"/>
+            <output expression="&quot;Digite o valor do incremento!&quot;" newline="True"/>
+            <input variable="incremento"/>
+            <output expression="&quot;Primeiro Valor: &quot; &amp;valorInicial" newline="True"/>
+            <output expression="&quot;&#218;ltimo Valor: &quot; &amp;valorFinal" newline="True"/>
+            <output expression="&quot;Incremento: &quot; &amp;incremento" newline="True"/>
+            <if expression="valorInicial &lt;= valorFinal">
+                <then>
+                    <do expression="valorInicial &lt;= valorFinal">
+                        <output expression="&quot;n&#250;mero&quot; &amp; valorInicial" newline="True"/>
+                        <assign variable="valorInicial" expression="valorInicial+incremento"/>
+                    </do>
+                </then>
+                <else>
+                    <do expression="valorInicial &gt;= valorFinal">
+                        <output expression="&quot;n&#250;mero&quot; &amp; valorInicial" newline="True"/>
+                        <assign variable="valorInicial" expression="valorInicial-incremento"/>
+                    </do>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
